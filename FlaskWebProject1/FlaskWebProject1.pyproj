@@ -42,6 +42,7 @@
     <Folder Include="HelloFlask\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HelloFlask\templates\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
