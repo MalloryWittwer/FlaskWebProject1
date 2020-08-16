@@ -7,7 +7,7 @@
     <ProjectGuid>479aaf33-da4a-434f-8def-2c54d2471239</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
-    <StartupFile>FlaskWebProject1\app.py</StartupFile>
+    <StartupFile>runserver.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -18,7 +18,7 @@
     <Name>FlaskWebProject1</Name>
     <RootNamespace>FlaskWebProject1</RootNamespace>
     <InterpreterId>Global|PythonCore|3.7</InterpreterId>
-    <WebBrowserPort>4449</WebBrowserPort>
+    <WebBrowserPort>5555</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,52 +29,22 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="FlaskWebProject1\app.py">
+    <Compile Include="HelloFlask\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HelloFlask\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="runserver.py" />
-    <Compile Include="FlaskWebProject1\__init__.py" />
-    <Compile Include="FlaskWebProject1\views.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="FlaskWebProject1\" />
-    <Folder Include="FlaskWebProject1\static\" />
-    <Folder Include="FlaskWebProject1\static\content\" />
-    <Folder Include="FlaskWebProject1\static\fonts\" />
-    <Folder Include="FlaskWebProject1\static\scripts\" />
-    <Folder Include="FlaskWebProject1\templates\" />
+    <Folder Include="HelloFlask\" />
+    <Folder Include="HelloFlask\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
-    <Content Include="FlaskWebProject1\static\content\bootstrap.css" />
-    <Content Include="FlaskWebProject1\static\content\bootstrap.min.css" />
-    <Content Include="FlaskWebProject1\static\content\site.css" />
-    <Content Include="FlaskWebProject1\static\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="FlaskWebProject1\static\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="FlaskWebProject1\static\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="FlaskWebProject1\static\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="FlaskWebProject1\static\scripts\bootstrap.js" />
-    <Content Include="FlaskWebProject1\static\scripts\bootstrap.min.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery-1.10.2.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery-1.10.2.min.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery-1.10.2.min.map" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery.validate-vsdoc.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery.validate.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery.validate.min.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="FlaskWebProject1\static\scripts\modernizr-2.6.2.js" />
-    <Content Include="FlaskWebProject1\static\scripts\respond.js" />
-    <Content Include="FlaskWebProject1\static\scripts\respond.min.js" />
-    <Content Include="FlaskWebProject1\static\scripts\_references.js" />
-    <Content Include="FlaskWebProject1\templates\about.html" />
-    <Content Include="FlaskWebProject1\templates\contact.html" />
-    <Content Include="FlaskWebProject1\templates\index.html" />
-    <Content Include="FlaskWebProject1\templates\layout.html" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="CondaEnv|CondaEnv|guiPyQT5" />
     <InterpreterReference Include="Global|PythonCore|3.7" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
